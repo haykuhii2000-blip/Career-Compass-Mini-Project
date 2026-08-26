@@ -1,9 +1,11 @@
 import streamlit as st
 from supabase import create_client, Client
+load_dotenv()
 
 # 1. Connect to Supabase
-url: str = "https://ivcwoqyyzekeewabavds.supabase.co"
-key: str = "sb_publishable_KZua9F4-DPPFDAc-p89S-Q_qSePGzHb"
+url: str = os.getenv("SUPABASE_URL") or st.secrets.get("SUPABASE_URL")
+key: str = os.getenv("SUPABASE_KEY") or st.secrets.get("SUPABASE_KEY")
+
 supabase: Client = create_client(url, key)
 
 # Configure elegant UI layout canvas
