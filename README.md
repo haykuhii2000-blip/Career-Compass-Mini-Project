@@ -41,19 +41,25 @@ Secrets are kept strictly out of version control. For local deployment, create a
 
 ```env
 SUPABASE_URL=your_supabase_url
-SUPABASE_KEY=your_supabase_key```
+SUPABASE_KEY=your_supabase_key
+```
 
-🚀 Quick Start
-Clone the project:
-Bash
-```git clone [https://github.com/haykuhii2000-blip/career-compass-mini-project.git](https://github.com/haykuhii2000-blip/career-compass-mini-project.git)
-cd career-compass-mini-project```
+### 🚀 Quick Start
 
-Install requirements:
-Bash
-```pip install -r requirements.txt```
+1. **Clone the project:**
+```bash
+git clone https://github.com/haykuhii2000-blip/Career-Compass-Mini-Project.git
+cd Career-Compass-Mini-Project
+```
 
-Launch the app:
-Bash
-```streamlit run app.py```
+2. **Install requirements:**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Launch the app:**
+```bash
+streamlit run app.py
+```
+
 Crafted with care by Haykuhi Ananyan
